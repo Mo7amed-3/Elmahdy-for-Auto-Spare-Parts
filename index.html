@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELMAHDY | قطع غيار السيارات الملاكي</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background: #000;
+      color: white;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      color: #e60000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 25px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #e60000;
+    }
+
+    .hero {
+      height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1600&auto=format&fit=crop') center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 65px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #e60000;
+      color: white;
+      border: none;
+      padding: 15px 35px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #b80000;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 70px 0 20px;
+      font-size: 40px;
+    }
+
+    .products {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding-bottom: 80px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+
+    .price {
+      color: #e60000;
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .about {
+      background: #000;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 900px;
+      margin: auto;
+      line-height: 2;
+      font-size: 20px;
+      color: #ddd;
+    }
+
+    .contact {
+      width: 85%;
+      margin: 70px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .contact form {
+      display: grid;
+      gap: 20px;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    footer {
+      background: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+    }
+
+    @media(max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+      }
+
+      .hero-content h1 {
+        font-size: 40px;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">ELMAHDY</div>
+
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#products">المنتجات</a>
+      <a href="#about">من نحن</a>
+      <a href="#contact">اتصل بنا</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1> القطع غيار السيارات الملاكي</h1>
+      <p>
+        أفضل قطع الغيار الأصلية والاستيراد لجميع أنواع السيارات بأسعار ممتازة.
+      </p>
+      <button class="btn">اطلب الآن</button>
+    </div>
+  </section>
+
+  <h2 class="section-title" id="products">منتجاتنا</h2>
+
+  <section class="products">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop" alt="">
+      <div class="card-content">
+        <h3>فلاتر زيت</h3>
+        <div class="price">من 250 جنيه</div>
+        <button class="btn">عرض التفاصيل</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=1200&auto=format&fit=crop" alt="">
+      <div class="card-content">
+        <h3>بطاريات سيارات</h3>
+        <div class="price">من 1800 جنيه</div>
+        <button class="btn">عرض التفاصيل</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop" alt="">
+      <div class="card-content">
+        <h3>تيل فرامل</h3>
+        <div class="price">من 700 جنيه</div>
+        <button class="btn">عرض التفاصيل</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop" alt="">
+      <div class="card-content">
+        <h3>زيوت محركات</h3>
+        <div class="price">من 450 جنيه</div>
+        <button class="btn">عرض التفاصيل</button>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="section-title">من نحن</h2>
+    <p>
+      ELMAHDY لقطع غيار السيارات الملاكي يوفر أفضل أنواع قطع الغيار الأصلية والاستيراد،
+      مع أسعار تنافسية وخدمة عملاء ممتازة وسرعة في التوصيل.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">تواصل معنا</h2>
+
+    <div style="text-align:center; margin-top:20px;">
+      <h3 style="margin-bottom:25px; font-size:28px;">للطلب والاستفسار عبر واتساب</h3>
+
+      <a 
+        href="https://wa.me/201127343035" 
+        target="_blank"
+        style="display:inline-block; background:#25D366; color:white; text-decoration:none; padding:18px 40px; border-radius:14px; font-size:22px; font-weight:bold; transition:0.3s;"
+      >
+        واتساب: +201127343035
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 ELMAHDY - جميع الحقوق محفوظة
+  </footer>
+
+</body>
+</html>
